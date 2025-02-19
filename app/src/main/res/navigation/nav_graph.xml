@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.android.mapapp.ui.login.SplashScreenFragment"
+        android:label="SplashScreenFragment" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.android.mapapp.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.android.mapapp.ui.login.SignupFragment"
+        android:label="SignupFragment" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.android.mapapp.ui.place.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_addPlaceFragment"
+            app:destination="@id/addPlaceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewPlaceFragment"
+            app:destination="@id/viewPlaceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addTransportationFragment"
+            app:destination="@id/addTransportationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewTransportationFragment"
+            app:destination="@id/viewTransportationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlaceFragment"
+        android:name="com.android.mapapp.ui.place.AddPlaceFragment"
+        android:label="AddPlaceFragment" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.android.mapapp.ui.place.CategoryFragment"
+        android:label="CategoryFragment" >
+        <action
+            android:id="@+id/action_categoryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPlaceFragment"
+        android:name="com.android.mapapp.ui.place.ViewPlaceFragment"
+        android:label="ViewPlaceFragment" />
+    <fragment
+        android:id="@+id/viewTransportationFragment"
+        android:name="com.android.mapapp.ui.place.ViewTransportationFragment"
+        android:label="ViewTransportationFragment" />
+    <fragment
+        android:id="@+id/addTransportationFragment"
+        android:name="com.android.mapapp.ui.place.AddTransportationFragment"
+        android:label="AddTransportationFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.android.mapapp.ui.place.ProfileFragment"
+        android:label="ProfileFragment" />
+</navigation>

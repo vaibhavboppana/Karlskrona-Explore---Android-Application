@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/cd_place"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/iv_place"
+            android:layout_width="match_parent"
+            android:src="@drawable/emptyimage"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cd_place"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Title"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/text_color"
+        android:id="@+id/tv_title"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginStart="16dp"
+        android:id="@+id/tv_description"
+        android:autoLink="web"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Description"
+        android:textSize="16sp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:text="Restaurant attractions"
+        android:id="@+id/tv_type"
+        android:textColor="@color/main_color"
+        android:textSize="14sp"/>
+
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_type"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:isIndicator="true"
+        android:visibility="gone"
+        style="@android:attr/ratingBarStyleSmall"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:id="@+id/ratingbar"
+        android:transformPivotY="0dp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/ratingbar"
+        app:layout_constraintBottom_toBottomOf="@id/ratingbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_action_map"
+        app:tint="@color/white"
+        android:id="@+id/fab_location"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_color"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

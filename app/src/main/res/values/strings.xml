@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">Karlskrona Explore</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="types">
+        <item>Tourist attractions</item>
+        <item>Accommodation</item>
+        <item>Restaurant</item>
+    </string-array>
+
+    <string name="map_api_key">AIzaSyAnh9a3t12IXqy-7yg2pK1-MrcOEeaFW4k</string>
+    <string name="because"><i>Because</i></string>
+    <string name="karlskrona"><i>Karlskrona</i></string>
+    <string name="is_always_a"><i>is always a</i></string>
+    <string name="good_idea"><i>good idea.</i></string>
+
+</resources>

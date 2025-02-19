@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cd_place">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_place"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/cd_place"
+        app:layout_constraintTop_toBottomOf="@id/cd_place"
+        android:text="Tourist attractions"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:id="@+id/tv_place"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/cd_place"
+        app:layout_constraintTop_toBottomOf="@id/cd_place"
+        android:text="4.3"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/iv_star"
+        android:textColor="@color/text_color"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/star_on"
+        android:id="@+id/iv_staricon"
+        app:layout_constraintEnd_toStartOf="@id/iv_star"
+        app:layout_constraintTop_toTopOf="@id/iv_star"
+        app:layout_constraintBottom_toBottomOf="@id/iv_star"/>
+
+
+
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
